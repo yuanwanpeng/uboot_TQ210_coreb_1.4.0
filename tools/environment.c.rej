@@ -1,0 +1,11 @@
+--- uboot_TQ210_1.3.4/tools/environment.c	2016-05-24 11:17:02.000000000 +0800
++++ uboot_TQ210_1.4.0/tools/environment.c	2017-11-17 11:49:28.466463596 +0800
+@@ -167,7 +167,7 @@
+ #endif
+ #ifdef	CONFIG_LCD_TYPE //add...
+ 	"lcdtype="	MK_STR(CONFIG_LCD_TYPE)		"\0"
+-#endif
++#endif /* CONFIG_LCD_TYPE */
+ #ifdef	CONFIG_PREBOOT
+ 	"preboot="	CONFIG_PREBOOT			"\0"
+ #endif
